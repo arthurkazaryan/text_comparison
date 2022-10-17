@@ -2,9 +2,7 @@ from database.commands import add_company, get_companies
 from fuzzywuzzy import process
 
 
-def search_nearest(input_name: str):
-
-    company_names = get_companies()
+def search_nearest(input_name: str, company_names: list):
     distance = 0
     nearest = ''
 

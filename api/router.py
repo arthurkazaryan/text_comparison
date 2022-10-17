@@ -10,7 +10,9 @@ detection_v1 = APIRouter()
 @detection_v1.post('/push', tags=['detection'])
 async def post_detection(name: str):
 
-    distance, nearest = search_nearest(input_name=name)
+    company_names = get_companies()
+
+    distance, nearest = search_nearest(input_name=name, company_names=company_names)
 
     if distance < 0.7:
         add_company(
