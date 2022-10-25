@@ -72,11 +72,16 @@ Before vectorizing a company name, there are some preprocessing steps required t
 <h2>Model selection</h2>
 For vectorizing a company name several models were chosen:
 <ul>
-<li>BERT;</li>
-<li>LaBSE;</li>
-<li>MiniLM;</li>
-<li>Distiluse;</li>
-<li>FuzzyWuzzy.</li>
+<li>bert-base-nli-mean-tokens</li>
+    It maps sentences & paragraphs to a 768 dimensional dense vector space and can be used for tasks like clustering or semantic search.
+<li>LaBSE</li>
+    It can be used to map 109 languages to a shared vector space.
+<li>all-MiniLM-L6-v2</li>
+    It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.
+<li>distiluse-base-multilingual-cased-v2</li>
+    It maps sentences & paragraphs to a 512 dimensional dense vector space and can be used for tasks like clustering or semantic search.
+<li>FuzzyWuzzy</li>
+    It uses Levenshtein Distance to calculate the differences between sequences in a simple-to-use package.
 </ul>
 
 Each of the models were tested on a given dataset the metrics score are:
