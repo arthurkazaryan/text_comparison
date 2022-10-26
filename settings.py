@@ -5,5 +5,5 @@ MODEL_NAMES = {
     'MiniLM': 'sentence-transformers/all-MiniLM-L6-v2'
 }
 
-MODEL_SELECTION = 'LaBSE'
+MODEL_SELECTION = 'MiniLM'
 MAKE_TRANSLATION = True
