@@ -11,4 +11,15 @@ def preprocess_data(company_name: str, make_translation: bool = MAKE_TRANSLATION
     if make_translation:
         company_name = translator.translate(company_name, dest='en').text
 
-    return company_name.lower()
+    common_words = ['ltd', 'co', 'inc', 'international', 'industries', 'air', 'lines', 'trading',
+                    'logistics', 'products', 'industrial', 'corp', 'corporation', 'trade', 'group',
+                    'industry', 'industria', 'comercio', 'global']
+
+    company_name_list = [name.lower() for name in company_name.split()]
+    company_name_rdy_list = []
+
+    for word in company_name_list:
+        if word not in common_words:
+            company_name_rdy_list.append(word)
+
+    return ' '.join(company_name_rdy_list)
