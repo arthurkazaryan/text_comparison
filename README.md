@@ -53,16 +53,16 @@ Before vectorizing a company name, there are some preprocessing steps required t
     <th>After</th>
 </tr>
 <tr>
-    <td>COMPANY NAME</td>
-    <td>COMPANY NAME</td>
+    <td>Iko Industries Ltd.</td>
+    <td>iko</td>
 </tr>
 <tr>
-    <td>COMPANY NAME</td>
-    <td>COMPANY NAME</td>
+    <td>Tress A/S</td>
+    <td>tress a s</td>
 </tr>
 <tr>
-    <td>COMPANY NAME</td>
-    <td>COMPANY NAME</td>
+    <td>КОНТИНЕНТАЛ КАЛУГА</td>
+    <td>continental kaluga</td>
 </tr>
 </table>
 
@@ -98,35 +98,35 @@ Each of the models were tested on a given dataset the metrics score are:
 </tr>
 <tr>
     <td>BERT</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td>0.16</td>
+    <td>0.57</td>
+    <td>0.99</td>
+    <td>0.21</td>
+    <td>0.13</td>
 </tr>
 <tr>
     <td>LaBSE</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td>0.18</td>
+    <td>0.77</td>
+    <td>0.99</td>
+    <td>0.29</td>
+    <td>0.13</td>
 </tr>
 <tr>
     <td>MiniLM</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td>0.27</td>
+    <td>0.84</td>
+    <td>0.99</td>
+    <td>0.4</td>
+    <td>0.21</td>
 </tr>
 <tr>
     <td>Distiluse</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td>0.14</td>
+    <td>0.53</td>
+    <td>0.99</td>
+    <td>0.34</td>
+    <td>0.08</td>
 </tr>
 <tr>
     <td>FuzzyWuzzy</td>
