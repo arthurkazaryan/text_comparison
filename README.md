@@ -139,6 +139,19 @@ Each of the models were tested on a given dataset the metrics score are:
 </table>
 
 <hr>
+<h2>System performance evaluation</h2>
+Processing a single request using language verification and translation - 1.6 s.<br> 
+Processing a single request in English (without using language verification and translation) - 0.1 s.<br> 
+The performance was measured on the following hardware:
+<li>i5-10300H</li>
+<li>GTX 1650ti</li>
+<li>16gb RAM</li>
+
+<hr>
+<h2>Scaling</h2>
+The solution can be scaled as it is presented by a ready-made Fast API based service.
+
+<hr>
 <h2>Fast API based service for text comparison</h2>
 
 <h3>Installation</h3>
